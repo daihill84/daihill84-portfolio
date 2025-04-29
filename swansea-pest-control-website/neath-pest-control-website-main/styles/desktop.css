@@ -1,0 +1,298 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #e0f7fa;
+}
+
+/* Header Styles */
+.header {
+    background-color: grey;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Insect List Styles */
+.insect-lists {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.list {
+    width: 32%;
+    margin-bottom: 20px;
+}
+
+.list h3 {
+    margin-top: 0;
+}
+
+/* Logo Container */
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.logo {
+    height: 60px;
+    width: auto;
+    margin-bottom: 10px;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.2s;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Company Name */
+.company-name {
+    font-size: 1.8em;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Contact Info Styles */
+.contact-info {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Phone Number Styles */
+.phone-number {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+/* Email Toggle Styles */
+.email-toggle {
+    cursor: pointer;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.email-address {
+    color: #ffb300;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.email-address:hover {
+    text-decoration: underline;
+}
+
+/* Navigation Styles */
+.navigation {
+    background-color: #00796b;
+    overflow: hidden;
+}
+
+.navigation ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+}
+
+.navigation li {
+    display: inline-block;
+}
+
+.navigation a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.navigation a:hover {
+    background-color: #004d40;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+}
+
+/* Heading Styles */
+h2 {
+    color: #ff5722;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+h3 {
+    color: #00796b;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Call Button */
+.call-button {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.call-button:hover {
+    background-color: #ff1a1a;
+}
+
+/* Paragraph Styles */
+p {
+    margin: 15px 0;
+    text-align: center;
+}
+
+/* Centered Images */
+.center-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 150px; /* Changed to max-width for better responsiveness */
+}
+
+/* Image Gallery */
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* List Styles */
+ul {
+    padding-left: 20px;
+    text-align: center;
+    list-style-type: none;
+}
+
+/* Section Styles */
+section {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Video Container */
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.video-container iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Footer */
+.footer {
+    background-color: #004d40;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+}
+
+/* Footer Icons */
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.footer-icons img {
+    height: 40px;
+    width: 40px;
+}
+
+/* Max size for images */
+img {
+    max-width: 100px; /* Limit image size to 100px */
+    height: auto;
+}
+
+/* Footer Links */
+.footer a {
+    color: #ffb300;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Floating Call Button */
+.floating-call-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff4081;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+.floating-call-button:hover {
+    background-color: #f50057;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 900px) {
+    .navigation li {
+        float: none;
+        width: 100%;
+    }
+
+    .footer-icons img {
+        height: 35px;
+        width: 35px;
+    }
+
+    img {
+        max-width: 80px; /* Adjust max width for mobile devices */
+    }
+
+    .center-image {
+        max-width: 100px; /* Adjusted for mobile responsiveness */
+    }
+}

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welsh Mole Catcher | Pukka Pest Control with Visual Flair</title>
+  <meta name="description" content="Expert mole catching and pest control in Wales with a visually stunning twist. Family-run service for farms and rural homes using traditional methods. Call 07375 303124!">
+  <meta name="keywords" content="mole catching Wales, pest control farm, Welsh mole catcher, rural pest services, traditional mole traps">
+  <meta name="author" content="Welsh Mole Catcher">
+  <link rel="icon" href="https://via.placeholder.com/32?text=Icon" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      color: #4a3b30;
+      background-color: #fefbf6;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+      color: #3e2d20;
+    }
+    .hero-parallax {
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+      min-height: 100vh;
+      position: relative;
+    }
+    .wooden-btn {
+      background: linear-gradient(to bottom, #a8c686, #8ba567);
+      transition: all 0.3s ease;
+    }
+    .wooden-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+    .leafy-divider {
+      height: 50px;
+      background: url('https://www.transparenttextures.com/patterns/leaf.png'), linear-gradient(to right, #a8c686, #f0ead6);
+      background-blend-mode: overlay;
+    }
+    .masonry-grid {
+      column-count: 2;
+      column-gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .masonry-item {
+      break-inside: avoid;
+      margin-bottom: 1.5rem;
+      transition: transform 0.3s ease;
+    }
+    .masonry-item:hover {
+      transform: translateY(-5px);
+    }
+    .gallery-img {
+      transition: opacity 0.3s ease;
+    }
+    .gallery-img:hover {
+      opacity: 0.9;
+    }
+    .modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+    }
+    .modal.show {
+      opacity: 1;
+      visibility: visible;
+    }
+    .fade-in {
+      animation: fadeIn 1s ease-in-out forwards;
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    .bounce {
+      animation: bounce 0.5s ease-in-out;
+    }
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+      40% { transform: translateY(-30px); }
+      60% { transform: translateY(-15px); }
+    }
+    .scroll-reveal {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 0.6s ease-out;
+    }
+    .scroll-reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    /* Navigation adjustments */
+    @media (max-width: 640px) {
+      nav {
+        padding: 0.75rem;
+      }
+      nav a {
+        font-size: 0.75rem; /* 12px */
+      }
+      nav ul {
+        display: none;
+        padding: 0;
+        margin: 0;
+      }
+      nav ul.show {
+        display: flex;
+        flex-direction: column;
+        space-y-1;
+      }
+      .hamburger {
+        display: block;
+        font-size: 1.5rem;
+        cursor: pointer;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="bg-[#2f2a1d] text-[#f5e8c7] p-4 sticky top-0 z-20 shadow-lg">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="/" class="text-2xl sm:text-3xl font-heading tracking-wide bounce">Welsh Mole Catcher</a>
+      <button class="sm:hidden hamburger text-2xl" onclick="toggleMenu()">☰</button>
+      <ul class="flex space-x-3 sm:space-x-6" id="navMenu">
+        <li><a href="#home" class="text-sm sm:text-lg hover:text-[#a8c686] transition-colors duration-300 px-2 py-1">Home</a></li>
+        <li><a href="#services" class="text-sm sm:text-lg hover:text-[#a8c686] transition-colors duration-300 px-2 py-1">Services</a></li>
+        <li><a href="#gallery" class="text-sm sm:text-lg hover:text-[#a8c686] transition-colors duration-300 px-2 py-1">Gallery</a></li>
+        <li><a href="#contact" class="text-sm sm:text-lg hover:text-[#a8c686] transition-colors duration-300 px-2 py-1">Contact</a></li>
+        <li><a href="#faqs" class="text-sm sm:text-lg hover:text-[#a8c686] transition-colors duration-300 px-2 py-1">FAQs</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section with Parallax -->
+  <section id="home" class="hero-parallax" style="background-image: url('https://daihill84.github.io/mole/moles_collage.jpg')">
+    <div class="absolute inset-0 bg-gradient-to-b from-black/50 to-black/70 flex flex-col items-center justify-center text-center">
+      <img src="https://via.placeholder.com/180?text=Logo" alt="Welsh Mole Catcher Logo" class="rounded-full border-4 border-[#a8c686] shadow-xl mb-6 fade-in">
+      <h1 class="text-6xl md:text-8xl font-heading text-[#f5e8c7] tracking-tight fade-in">Welsh Mole Catcher</h1>
+      <p class="text-2xl md:text-3xl mt-6 font-body italic text-[#f5e8c7] fade-in">Traditional Pest Control with a Visual Twist</p>
+      <a href="#contact" class="mt-8 inline-block bg-[#a8c686] text-[#3e2d20] px-8 py-4 rounded-full font-semibold text-lg wooden-btn shadow-md fade-in">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="py-24 bg-[#fefbf6]">
+    <div class="container mx-auto px-6">
+      <h2 class="text-5xl font-heading text-[#3e2d20] border-b-4 border-[#a8c686] inline-block mb-8 text-center scroll-reveal">Rooted in the Welsh Countryside</h2>
+      <p class="text-xl text-[#4a3b30] font-body max-w-4xl mx-auto text-center leading-relaxed scroll-reveal">
+        At Welsh Mole Catcher, we bring the charm and grit of rural life to every job. Specializing in traditional mole trapping, we serve farms and countryside homes across South and Mid Wales with a family-run touch. Let us tackle your pest problems with methods as timeless as the rolling hills.
+      </p>
+    </div>
+    <div class="leafy-divider mt-12"></div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-24 bg-[#f0ead6]">
+    <div class="container mx-auto px-6">
+      <h2 class="text-5xl font-heading text-[#3e2d20] border-b-4 border-[#a8c686] inline-block mb-8 text-center scroll-reveal">Our Countryside Services</h2>
+      <div class="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+        <div class="bg-[#f9f5e8] p-8 rounded-2xl shadow-lg border border-[#d4c9a5] hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 scroll-reveal">
+          <h3 class="text-3xl font-heading text-[#3e2d20] mb-4">Mole Trapping</h3>
+          <p class="text-lg text-[#4a3b30] font-body leading-relaxed">
+            Using time-honored traps, we provide effective mole control that’s gentle on your land and safe for livestock.
+          </p>
+        </div>
+        <div class="bg-[#f9f5e8] p-8 rounded-2xl shadow-lg border border-[#d4c9a5] hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 scroll-reveal">
+          <h3 class="text-3xl font-heading text-[#3e2d20] mb-4">Pest Control</h3>
+          <p class="text-lg text-[#4a3b30] font-body leading-relaxed">
+            From rats and mice to wasps, bees, and squirrels, we manage all rural pests with care and expertise.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="leafy-divider mt-12"></div>
+  </section>
+
+  <!-- Gallery Section with Lightbox -->
+  <section id="gallery" class="py-24 bg-[#fefbf6]">
+    <div class="container mx-auto px-6">
+      <h2 class="text-5xl font-heading text-[#3e2d20] border-b-4 border-[#a8c686] inline-block mb-8 text-center scroll-reveal">A Glimpse of Our Work</h2>
+      <div class="masonry-grid max-w-6xl mx-auto">
+        <div class="masonry-item cursor-pointer scroll-reveal" onclick="openModal('https://daihill84.github.io/mole/moles_collage.jpg')">
+          <img src="https://daihill84.github.io/mole/moles_collage.jpg" alt="Moles caught on Welsh farms" class="w-full object-cover rounded-lg shadow-md gallery-img border-2 border-[#d4c9a5]">
+          <figcaption class="text-center py-3 bg-[#d4c9a5] text-[#4a3b30] font-body rounded-b-lg">Mole Catch Highlights</figcaption>
+        </div>
+        <div class="masonry-item cursor-pointer scroll-reveal" onclick="openModal('https://daihill84.github.io/mole/farm_moles.jpg')">
+          <img src="https://daihill84.github.io/mole/farm_moles.jpg" alt="Dead moles on a Welsh farm" class="w-full object-cover rounded-lg shadow-md gallery-img border-2 border-[#d4c9a5]">
+          <figcaption class="text-center py-3 bg-[#d4c9a5] text-[#4a3b30] font-body rounded-b-lg">Farm Results</figcaption>
+        </div>
+        <div class="masonry-item cursor-pointer scroll-reveal" onclick="openModal('https://daihill84.github.io/mole/farm_son.jpg')">
+          <img src="https://daihill84.github.io/mole/farm_son.jpg" alt="Father and son team mole trapping" class="w-full object-cover rounded-lg shadow-md gallery-img border-2 border-[#d4c9a5]">
+          <figcaption class="text-center py-3 bg-[#d4c9a5] text-[#4a3b30] font-body rounded-b-lg">Family Team</figcaption>
+        </div>
+        <div class="masonry-item cursor-pointer scroll-reveal" onclick="openModal('https://daihill84.github.io/mole/farm_john_mole.jpg')">
+          <img src="https://daihill84.github.io/mole/farm_john_mole.jpg" alt="Mole catching expert in field" class="w-full object-cover rounded-lg shadow-md gallery-img border-2 border-[#d4c9a5]">
+          <figcaption class="text-center py-3 bg-[#d4c9a5] text-[#4a3b30] font-body rounded-b-lg">In The Field</figcaption>
+        </div>
+      </div>
+    </div>
+    <div id="modal" class="modal"></div>
+    <div class="leafy-divider mt-12"></div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-24 bg-[#f0ead6]">
+    <div class="container mx-auto px-6">
+      <h2 class="text-5xl font-heading text-[#3e2d20] border-b-4 border-[#a8c686] inline-block mb-8 text-center scroll-reveal">Reach Out to Us</h2>
+      <div class="bg-[#f9f5e8] p-8 rounded-2xl shadow-lg max-w-lg mx-auto border border-[#d4c9a5] scroll-reveal">
+        <p class="text-lg text-[#4a3b30] mb-6 font-body text-center leading-relaxed">
+          Call us at <a href="tel:07375303124" class="text-[#3e2d20] hover:text-[#785f45] transition-colors duration-300">07375 303124</a> or send us a message:
+        </p>
+        <div id="contact-form">
+          <div class="mb-6">
+            <label class="block text-[#4a3b30] mb-2 font-body text-lg" for="name">Name</label>
+            <input type="text" id="name" name="name" class="w-full p-3 border rounded-lg border-[#d4c9a5] focus:outline-none focus:ring-2 focus:ring-[#a8c686] bg-[#fefbf6] font-body text-lg" placeholder="Your name" required>
+          </div>
+          <div class="mb-6">
+            <label class="block text-[#4a3b30] mb-2 font-body text-lg" for="email">Email</label>
+            <input type="email" id="email" name="email" class="w-full p-3 border rounded-lg border-[#d4c9a5] focus:outline-none focus:ring-2 focus:ring-[#a8c686] bg-[#fefbf6] font-body text-lg" placeholder="Your email" required>
+          </div>
+          <div class="mb-6">
+            <label class="block text-[#4a3b30] mb-2 font-body text-lg" for="message">Message</label>
+            <textarea id="message" name="message" class="w-full p-3 border rounded-lg border-[#d4c9a5] focus:outline-none focus:ring-2 focus:ring-[#a8c686] bg-[#fefbf6] font-body text-lg" placeholder="How can we help?" rows="5" required></textarea>
+          </div>
+          <button onclick="handleSubmit()" class="w-full bg-[#3e2d20] text-[#f5e8c7] p-4 rounded-lg hover:bg-[#785f45] transition-all duration-300 font-body wooden-btn text-lg transform hover:scale-105 shadow-md">Send Message</button>
+        </div>
+      </div>
+    </div>
+    <div class="leafy-divider mt-12"></div>
+  </section>
+
+  <!-- FAQs Section -->
+  <section id="faqs" class="py-24 bg-[#fefbf6]">
+    <div class="container mx-auto px-6">
+      <h2 class="text-5xl font-heading text-[#3e2d20] border-b-4 border-[#a8c686] inline-block mb-8 text-center scroll-reveal">Frequently Asked Questions</h2>
+      <div class="bg-[#f9f5e8] p-8 rounded-2xl shadow-lg border border-[#d4c9a5] max-w-5xl mx-auto scroll-reveal">
+        <div class="faq-item mb-6">
+          <h3 class="text-2xl font-heading text-[#3e2d20] mb-3">How do I get rid of moles on my farm in Wales?</h3>
+          <p class="text-lg text-[#4a3b30] font-body leading-relaxed">
+            The most effective way to get rid of moles on your farm in Wales is through traditional mole trapping. At Welsh Mole Catcher, we use safe, time-tested traps to remove moles without harming your land or livestock. Contact us at <a href="tel:07375303124" class="text-[#3e2d20] hover:text-[#785f45] transition-colors duration-300">07375 303124</a> for expert service.
+          </p>
+        </div>
+        <div class="faq-item mb-6">
+          <h3 class="text-2xl font-heading text-[#3e2d20] mb-3">What is traditional mole catching?</h3>
+          <p class="text-lg text-[#4a3b30] font-body leading-relaxed">
+            Traditional mole catching involves using manual traps, like spring traps or scissor traps, placed in mole tunnels. This method avoids chemicals, making it safe for farms and rural homes. It’s a skill passed down through generations, and we’ve perfected it here in Wales.
+          </p>
+        </div>
+        <div class="faq-item mb-6">
+          <h3 class="text-2xl font-heading text-[#3e2d20] mb-3">How much does mole catching cost in Wales?</h3>
+          <p class="text-lg text-[#4a3b30] font-body leading-relaxed">
+            The cost of mole catching in Wales depends on the size of your property and the extent of the infestation. At Welsh Mole Catcher, we offer competitive pricing tailored to your needs. Call us at <a href="tel:07375303124" class="text-[#3e2d20] hover:text-[#785f45] transition-colors duration-300">07375 303124</a> for a personalized quote.
+          </p>
+        </div>
+        <div class="faq-item mb-6">
+          <h3 class="text-2xl font-heading text-[#3e2d20] mb-3">Can you help with other pests besides moles?</h3>
+          <p class="text-lg text-[#4a3b30] font-body leading-relaxed">
+            Yes, we handle a range of rural pests including rats, mice, wasps, bees, and squirrels. Our methods are safe for farms and countryside homes, ensuring your property stays pest-free without harming the environment.
+          </p>
+        </div>
+        <div class="faq-item">
+          <h3 class="text-2xl font-heading text-[#3e2d20] mb-3">Why are moles a problem for farms?</h3>
+          <p class="text-lg text-[#4a3b30] font-body leading-relaxed">
+            Moles can damage farmland by creating tunnels and molehills, which disrupt soil, harm crops, and create hazards for livestock. Their activity can also affect machinery and lead to uneven terrain, making mole control essential for Welsh farms.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="leafy-divider mt-12"></div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#2f2a1d] text-[#f5e8c7] py-12 text-center">
+    <p class="font-body text-lg">© 2025 Welsh Mole Catcher | <a href="https://www.welshtownandcountry.co.uk" class="text-[#a8c686] hover:underline transition-colors duration-300">Back to Main Site</a></p>
+  </footer>
+
+  <!-- JavaScript for Visual Effects -->
+  <script>
+    // Lightbox Modal
+    function openModal(imageSrc) {
+      const modal = document.getElementById('modal');
+      modal.innerHTML = `
+        <div class="relative">
+          <img src="${imageSrc}" alt="Gallery Image" class="rounded-lg border-4 border-[#d4c9a5] shadow-2xl" style="max-width: 90%; max-height: 90%;">
+          <button class="absolute top-4 right-4 bg-[#3e2d20] text-[#f5e8c7] p-3 rounded-full hover:bg-[#785f45] transition-colors duration-300" onclick="closeModal()">✕</button>
+        </div>
+      `;
+      modal.classList.add('show');
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('modal');
+      modal.classList.remove('show');
+      modal.innerHTML = '';
+    }
+
+    // Scroll Reveal Animation
+    const scrollReveals = document.querySelectorAll('.scroll-reveal');
+    const revealOnScroll = () => {
+      scrollReveals.forEach(el => {
+        const windowHeight = window.innerHeight;
+        const elementTop = el.getBoundingClientRect().top;
+        if (elementTop < windowHeight - 100) {
+          el.classList.add('visible');
+        }
+      });
+    };
+    window.addEventListener('scroll', revealOnScroll);
+    revealOnScroll(); // Trigger on page load
+
+    // Contact Form Submission (Simulated)
+    function handleSubmit() {
+      const form = document.getElementById('contact-form');
+      form.insertAdjacentHTML('afterend', '<p class="text-[#a8c686] mt-6 text-center font-body text-lg fade-in">Thank you! We’ll get back to you soon.</p>');
+      form.style.display = 'none';
+    }
+
+    // Navigation Toggle
+    function toggleMenu() {
+      const menu = document.getElementById('navMenu');
+      menu.classList.toggle('show');
+    }
+  </script>
+</body>
+</html>

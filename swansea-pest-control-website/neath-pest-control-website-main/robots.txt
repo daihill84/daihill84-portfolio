@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://merthyr.welshtownandcountry.co.uk/sitemap.xml
